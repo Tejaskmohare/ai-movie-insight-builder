@@ -27,7 +27,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        {/* Particle background sits behind everything */}
+        <div style={{position: 'fixed', inset: 0, zIndex: 0, pointerEvents: 'none'}}>
+          {/* dynamically imported client component */}
+          {/* Importing with next/dynamic could be used, but a direct client component import works too */}
+          {/* Use a relative import to the component we added */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+        </div>
+        <div style={{position: 'relative', zIndex: 10}}>
+          {children}
+        </div>
       </body>
     </html>
   );
