@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 AI Movie Insight Builder
 
-## Getting Started
+A full-stack web application that allows users to enter an IMDb movie ID and get detailed movie insights including metadata, cast, and AI-powered audience sentiment analysis.
 
-First, run the development server:
+## 🚀 Live Demo
+https://ai-movie-insight-builderr-blond.vercel.app/
+## 📂 GitHub Repository
+https://github.com/Tejaskmohare/ai-movie-insight-builder
 
-```bash
+---
+
+# 📌 Features
+
+- Enter an IMDb movie ID (example: tt0133093)
+- Fetch movie details including:
+  - Movie title
+  - Poster
+  - Cast list
+  - Release year
+  - IMDb rating
+- Display short movie plot
+- Responsive UI for desktop and mobile
+- Input validation and error handling
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+- Next.js
+- React
+- Tailwind CSS
+
+### Backend
+- Next.js API Routes (Node.js)
+
+### Deployment
+- Vercel
+
+---
+
+# ⚙️ Setup Instructions
+
+### 1 Clone the repository
+git clone https://github.com/your-username/repository-name.git
+
+
+Navigate to the project directory
+cd repository-name
+
+Install dependencies
+npm install
+
+Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
+ in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📊 How It Works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+User enters an IMDb movie ID.
+The system fetches movie metadata.
+Audience reviews are analyzed.
+The app displays insights.
 
-## Learn More
+⚠️ Assumptions
 
-To learn more about Next.js, take a look at the following resources:
+IMDb ID must be valid.
+Review availability may vary depending on the movie.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+👨‍💻 Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Developed as part of a Full-Stack Developer Internship Assignment.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
